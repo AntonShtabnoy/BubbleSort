@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sort algorithm visualization</title>
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="Here is sort, Bubble sort &amp; Cocktail Shake sort visualised via 3 graph. methods">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header class="page-header" role="banner">Bubble sort algorithm visualization</header>
+<div class="mainPage" role="main">
+    <div class="container">
+        <div class="sortButton transition" id="lineView"></div>
+        <div class="buttonContainer">
+            <div class="playButton button transition" id="playButton" onmousedown="mouseDown()" onclick="start()">
+                <div class="inner-play"></div>
+            </div>
+            <div class="resetButton button transition" onclick="createNewArray()">
+                <div class="inner-reset"></div>
+            </div>
+        </div>
+        <br>
+        <div class="sortPlace">
+            <canvas id="canvas" width="900" height="900"></canvas>
+        </div>
+    </div>
+
+</div>
+
+<footer class=page-footer>
+    Anton Shtabnoy <br>
+    Belarus, Minsk 2018
+</footer>
+
+</body>
+<script src="bubbleSortScript.js"></script>
+</html>
+
